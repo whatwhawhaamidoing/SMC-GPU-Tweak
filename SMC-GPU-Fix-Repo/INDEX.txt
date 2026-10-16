@@ -1,0 +1,69 @@
+================================================================
+SMC GPU Fix Repository - File Index
+================================================================
+
+DOCUMENTATION
+-------------
+README.md              Main documentation (start here)
+QUICKSTART.txt         Quick installation guide
+COMPATIBILITY.md       Device compatibility matrix
+CHANGELOG.md           Version history and updates
+
+TOOLS
+-----
+Manage-GPU-Fixes.ps1   PowerShell tool to install/remove/check fixes
+
+GPU FIX FILES (res_patch/)
+---------------------------
+942/14911336842006735291    mobile_device_level.json (11 KB)
+                            Adds 42+ modern GPUs to device table
+
+902/16250989156789984091    lightmap_nx2_mobile.fx (2.6 KB)
+                            GPU skinning fix for scenery/buildings
+
+230/9126629151205861481     dissolve_void.fx (2.0 KB)
+                            GPU skinning fix for dissolve effects
+
+654/4772179034807473074     split_texture.fx (2.8 KB)
+                            GPU skinning fix for glass/bullet effects
+
+554/6362951946433427327     device_quality_conf.json (316 bytes)
+                            Quality/resolution overrides (optional)
+
+res_patch/README_GPU_FIXES.txt  Technical reference
+
+TOTAL SIZE: ~20 KB (excluding documentation)
+
+================================================================
+
+HOW TO USE THIS REPO
+--------------------
+
+For End Users:
+  1. Read QUICKSTART.txt
+  2. Run Manage-GPU-Fixes.ps1 -GpuSkinPatch
+  3. Play the game
+
+For Developers/Contributors:
+  1. Read README.md for technical details
+  2. Check COMPATIBILITY.md for testing info
+  3. Review CHANGELOG.md for iteration history
+
+For Distribution:
+  • Share the entire SMC-GPU-Fix-Repo folder
+  • Or zip it for easier distribution
+  • Keep all files together for proper functionality
+
+================================================================
+
+VERSION CONTROL
+---------------
+This repo is designed to be updated as:
+• New GPU families are released
+• Game updates change requirements
+• Better patching strategies are discovered
+• Community reports issues on specific devices
+
+Each update should increment the version in CHANGELOG.md
+
+================================================================
