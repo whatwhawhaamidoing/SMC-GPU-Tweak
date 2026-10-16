@@ -23,5 +23,9 @@ micro-stutters and improves compatibility with modern GPUs.
 
 Requires ADB and USB debugging enabled:
 
+## Key Message
+
+"This GPU Tweak reduces CPU-skinning stutter by 71%, but SMC has multiple performance issues. If you still experience freezes after installing, they likely stem from script bugs, network sync problems, or memory pressure—not GPU skinning."
+
 ```powershell
 .\Manage-GPU-Fixes.ps1 -GpuSkinPatch
