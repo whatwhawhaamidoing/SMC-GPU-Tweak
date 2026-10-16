@@ -59,6 +59,20 @@ This repository contains GPU performance fixes for Super Mecha Champions (SMC) t
 - Micro-stalls: **~0.84 stalls/second** (66% reduction)
 - Modern GPUs: Properly recognized and configured
 
+### Important Limitations
+
+⚠️ **This fix addresses GPU skinning overhead only.** Live gameplay analysis 
+reveals additional freeze/stutter sources that remain unfixed:
+
+1. **Script errors** in breakable model initialization (`ComHpBreakable.py`)
+2. **Network sync issues** causing KeyError exceptions during battles
+3. **Memory pressure** (1.77 GB PSS on tested device)
+4. **Adreno-specific snapshot warnings** (panel.gpuSnapshotPath)
+
+These issues can still cause freezes even with GPU skinning optimized. The 
+GpuSkin fix reduces one category of stutter but does not eliminate all 
+performance problems.
+
 ### Remaining Issues
 - 35 fallbacks remain due to engine validator limitations
 - Cannot be reduced further without access to original shader source
@@ -190,6 +204,19 @@ SMC-GPU-Fix-Repo/
 1. Ensure you're playing enough to trigger all material types
 2. Some materials may only appear in specific game modes
 3. Pull log and count: `Select-String "does not support GpuSkin" phone-log-*.txt | Measure-Object`
+
+### Still Experiencing Freezes?
+
+⚠️ **GPU skinning is only one source of stutter.** Live analysis reveals other 
+unresolved issues:
+
+- **Script errors**: Breakable model initialization failures cause stalls
+- **Network sync**: KeyError exceptions during battle synchronization
+- **Memory pressure**: High PSS (1.77 GB) can trigger GC pauses
+- **Adreno warnings**: Snapshot system unavailable on some devices
+
+These require separate fixes beyond GPU skinning optimization. If freezes persist 
+after installing this tweak, they likely stem from these other sources.
 
 ---
 
