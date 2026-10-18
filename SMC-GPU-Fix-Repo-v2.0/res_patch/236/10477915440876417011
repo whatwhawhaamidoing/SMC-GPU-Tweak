@@ -1,0 +1,8 @@
+{
+    "version": 1,
+    "mech_id": 8004,
+    "skin_variant": "s03",
+    "soft_bone_params": [],
+    "ik_solver_enabled": false,
+    "note": "Stub config - prevents crash on mech transformation"
+}

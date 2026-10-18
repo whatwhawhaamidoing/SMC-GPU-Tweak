@@ -1,0 +1,8 @@
+{
+    "version": 1,
+    "mech_id": 8003,
+    "skin_variant": "8003",
+    "soft_bone_params": [],
+    "ik_solver_enabled": false,
+    "note": "Stub config - prevents Aurora crash on jump+boost"
+}
