@@ -37,11 +37,11 @@ these things and only one of them was ever true.
   The real cause of the remaining fallbacks is that the engine loads the compiled
   `.nfx` and decides GPU skinning itself, per object type. No file swap in this
   folder can change that. See HOW-IT-WORKS.md.
-- **The 478-GPU device table - NOT delivered by this repo.** It works, but not
-  from here: `res_patch` can only answer a request no archive can already answer,
+- **The 478-GPU device table - NOT delivered by this repo's installer.** It works, but
+  not from here: `res_patch` can only answer a request no archive can already answer,
   and both device tables exist inside `aab_res.npk`. They have to be added to a
-  `patch_npk` pack instead. Details and the two config files are in
-  [gpu-tables/](gpu-tables/).
+  `patch_npk` pack instead. [gpu-tables/](gpu-tables/) holds the quality override, the
+  `.npk` procedure, and the download link plus md5 for the 13.7 KB performance table.
 - **The Firefox (8002) crash - not explained, and its stubs were removed.** The
   two files blamed for it (`feng_sk_01.gim`, `shamo_yanchen.sfx`) are not missing;
   the game's own archives serve them.
@@ -120,7 +120,7 @@ it, and I would rather tell you that here than have you chase it.
 │   ├── 293/1362819922606888115
 │   ├── 166/4244815890268553029
 │   └── 346/13576069530125611063
-└── gpu-tables/               the two device tables, and why they need a .npk
+└── gpu-tables/               the quality override, and why both tables need a .npk
 ```
 
 ## Related
