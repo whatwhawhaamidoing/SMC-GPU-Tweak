@@ -1,0 +1,26 @@
+{
+  "version": "v2.5",
+  "entries": [
+    {
+      "request_path": "confs/soft_bone_param_8003_8003.json",
+      "bucket": 293,
+      "hash64": "1362819922606888115",
+      "bytes": 105,
+      "kind": "empty_conf"
+    },
+    {
+      "request_path": "confs/soft_bone_param_8004_s03.json",
+      "bucket": 166,
+      "hash64": "4244815890268553029",
+      "bytes": 105,
+      "kind": "empty_conf"
+    },
+    {
+      "request_path": "confs/mecha_skin_201800300_trigger_res.json",
+      "bucket": 346,
+      "hash64": "13576069530125611063",
+      "bytes": 101,
+      "kind": "empty_conf"
+    }
+  ]
+}

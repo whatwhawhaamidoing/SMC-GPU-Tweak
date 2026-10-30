@@ -1,0 +1,6 @@
+{
+    "simulation_steps": 30,
+    "air_friction_idle": 1.0,
+    "bone_cols": {},
+    "bone_chains": {}
+}
