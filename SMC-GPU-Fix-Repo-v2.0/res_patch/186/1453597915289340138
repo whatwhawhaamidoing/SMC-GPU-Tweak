@@ -1,7 +1,0 @@
-{
-    "version": 1,
-    "mech_id": 8003,
-    "skin_variant": "s00",
-    "trigger_resources": [],
-    "note": "Stub config - prevents Aurora jump+boost crash"
-}
