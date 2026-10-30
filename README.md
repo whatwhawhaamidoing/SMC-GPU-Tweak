@@ -75,7 +75,7 @@ If adb is not on your PATH, point the script at it:
 .\deploy_gpu_fixes.ps1 -AdbPath "C:\platform-tools\adb.exe"
 ```
 
-The script pushes `res_patch\` and **moves** the fourteen dead buckets from older
+The script pushes `res_patch\` and **moves** the fifteen dead buckets from older
 versions into `res_patch\retired/`. It never deletes anything on your phone, and
 re-running it is safe.
 

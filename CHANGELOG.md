@@ -11,7 +11,7 @@ and one of them removes a headline feature.
   sibling configs use) instead of invented ones.
 - **Repo layout flattened** to the root, so there is no more "extract the zip and
   then go into the folder inside it" step.
-- **`deploy_gpu_fixes.ps1` rewritten**: pushes only what loads, moves fourteen dead
+- **`deploy_gpu_fixes.ps1` rewritten**: pushes only what loads, moves fifteen dead
   buckets into `res_patch/retired/` (moved, never deleted), re-runs safely, verifies
   remote sizes, works with adb on PATH or `-AdbPath`, and prints the honest readout.
 
@@ -22,7 +22,8 @@ and one of them removes a headline feature.
   version from 2.0 to 2.4. They belong in a `patch_npk` pack - see `gpu-tables/`.
 - **G93SHADER-FIX.md and every shader patch.** The engine loads the compiled `.nfx`
   and supplies `GPU_SKIN_ENABLE` itself per object type; the `.fx` source is the
-  wrong layer, and the two variant buckets (121, 436, 96) were unreadable keys too.
+  wrong layer, and the three Samsung variant buckets (121, 436, 96) were unreadable
+  keys too.
 - **The Firefox stubs** (buckets 72, 52). Those two files are not missing - the
   phone's own archives serve them - and the stubs were hex-named on top of that.
 - **Every performance claim.** "122 → 3 fallbacks", "97% fewer micro-stalls" and
