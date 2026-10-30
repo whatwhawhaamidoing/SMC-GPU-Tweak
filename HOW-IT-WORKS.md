@@ -30,6 +30,11 @@ Two things cost me weeks of dead payloads:
 - **Names are decimal, not hex.** v2.0's shader stubs were hex-named, so they could
   never have been opened even at a reachable address.
 
+Independent confirmation that the rule is right, from the phone rather than from
+me: the engine writes its own PNG into `res_patch/952/17859796411857743767` during
+its session, and `17859796411857743767 % 1023 == 952`. Decimal names, bucket rule,
+engine's own output.
+
 There is a second, dumber channel that needs no hashing at all:
 
 ```
@@ -94,11 +99,6 @@ served table row sets the **default a fresh install begins with** and changes
 nothing for a profile that has already been touched. If you test a device-table
 change, grep `Use custom quality` - what the config returned - and not
 `set display quality` - what the game finally used.
-
-Independent confirmation that the bucket rule is right, from the phone rather than
-from me: the engine writes its own PNG into `res_patch/952/17859796411857743767`
-during its session, and `17859796411857743767 % 1023 == 952`. Decimal names,
-bucket rule, engine's own output.
 
 ## 4. Why the shader patches were withdrawn
 
